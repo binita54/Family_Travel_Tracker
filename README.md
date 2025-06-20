@@ -1,76 +1,102 @@
 # ✈️ Family Travel Tracker
 
-The **Family Travel Tracker** is a basic backend project built with **Node.js** and **Express**, where users can input their name and travel destination. It stores and displays a personalized travel message — helping you simulate form handling and routing in Express.
+The **Family Travel Tracker** is a backend web app built using **Node.js**, **Express**, and **PostgreSQL**. Users can input their name and travel destination via a form, which is then saved into a PostgreSQL database and displayed back as a personalized travel message.
 
 ---
 
 ## 🚀 Features
 
-- Accepts form input: Name + Destination
-- Displays a custom travel message like:  
+- Accepts user input via an HTML form (Name + Destination)
+- Saves the data into a PostgreSQL database
+- Displays a custom message like:  
   `"Binita is traveling to Pokhara."`
-- Uses Express and body-parser to process POST requests
-- Demonstrates basic form handling in the backend
+- Uses Express for routing and `body-parser` to handle form submissions
+- Uses `pg` Node package to connect to the PostgreSQL database
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Node.js
-- Express.js
-- body-parser
-- HTML (form interface)
+- **Node.js**
+- **Express.js**
+- **PostgreSQL**
+- **pg (PostgreSQL Node.js client)**
+- **HTML** (for frontend form)
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Structure
 
 ```
 Family_Travel_Tracker/
-├── index.js         # Main backend server file
-├── package.json     # Project configuration
+├── index.js           # Main server logic with Express and PostgreSQL
+├── package.json       # Project metadata and dependencies
+├── views/             # HTML form (if present)
+└── db/                # Optional folder for SQL scripts or DB configs
 ```
 
 ---
 
 ## ⚙️ How to Run Locally
 
-1. **Clone this repository**
+### 1. Clone this repository
 
 ```bash
 git clone https://github.com/binita54/Family_Travel_Tracker.git
 cd Family_Travel_Tracker
 ```
 
-2. **Install dependencies**
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-3. **Start the server**
+### 3. Set up PostgreSQL
+
+- Make sure PostgreSQL is installed and running
+- Create a database (e.g., `travel_db`)
+- Create a table using this structure:
+
+```sql
+CREATE TABLE travelers (
+  id SERIAL PRIMARY KEY,
+  name TEXT,
+  destination TEXT
+);
+```
+
+- Update your connection config inside `index.js` if needed:
+
+```js
+const db = new Client({
+  user: 'your_username',
+  host: 'localhost',
+  database: 'travel_db',
+  password: 'your_password',
+  port: 5432,
+});
+```
+
+### 4. Run the server
 
 ```bash
 nodemon index.js
 ```
 
-4. **Visit in browser**
+### 5. Visit in browser
 
-Open [http://localhost:3000](http://localhost:3000)  
-Fill out the form and submit it — you'll be redirected to:
-
-📍 `http://localhost:3000/submit`
-
-There, you'll see your personalized message!
+Go to: [http://localhost:3000](http://localhost:3000)  
+Fill out the form → submit → you’ll be redirected to `/submit` where you’ll see your travel message!
 
 ---
 
-## 🎯 What I Learned
+## 🧠 What I Learned
 
-- Building basic Express servers
-- Handling user input with POST routes
-- Using middleware (`body-parser`) to access form data
-- Sending dynamic content in the response
+- How to connect Node.js to a PostgreSQL database using `pg`
+- Handling HTML forms with Express and body-parser
+- Inserting and retrieving user data from a real database
+- Building real-world full-stack backend logic
 
 ---
 
@@ -87,4 +113,4 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-⭐ If you liked this project or found it useful, drop a ⭐ to support!
+⭐ If you found this project helpful or interesting, drop a ⭐ to support!
