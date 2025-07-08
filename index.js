@@ -1,20 +1,16 @@
 import express from "express";
 import bodyParser from "body-parser";
 import pg from "pg";
-import dotenv from "dotenv";
-dotenv.config();
-const { Client } = pg;
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const port = 3000;
 
-
-const db = new Client({
-  user: process.env.DB_USER,
-  host: process.env.DB_HOST,
-  database: process.env.DB_NAME,
-  password: process.env.DB_PASSWORD,
-  port: process.env.DB_PORT,
+const db = new pg.Client({
+  user: "postgres",
+  host: "localhost",
+  database: "world",
+  password: "bi54bg54",
+  port: 5432,
 });
 db.connect();
 
@@ -106,6 +102,6 @@ app.post("/new", async (req, res) => {
   res.redirect("/");
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
 });
