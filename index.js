@@ -106,6 +106,6 @@ app.post("/new", async (req, res) => {
   res.redirect("/");
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
