@@ -3,13 +3,13 @@
 The **Family Travel Tracker** is a backend web app built using **Node.js**, **Express**, and **PostgreSQL**. Users can input their name and travel destination via a form, which is then saved into a PostgreSQL database and displayed back as a personalized travel message.
 
 ---
-![A](screenshots/Screenshot (201).png)
-![B](screenshots/Screenshot (202).png)
-![C](screenshots/Screenshot (203).png)
-![D](screenshots/Screenshot (204).png)
-![E](screenshots/Screenshot (205).png)
-![F](screenshots/Screenshot (206).png)
-![G](screenshots/Screenshot (207).png)
+![A](screenshots/SS1.png)
+![B](screenshots/SS2.png)
+![C](screenshots/SS3.png)
+![D](screenshots/SS4.png)
+![E](screenshots/SS5.png)
+![F](screenshots/SS6.png)
+![G](screenshots/SS7.png)
 
 ## 🚀 Features
 
