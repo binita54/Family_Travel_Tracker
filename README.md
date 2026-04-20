@@ -98,7 +98,7 @@ Fill out the form → submit → you’ll be redirected to `/submit` where you�
 
 ---
 
-## 🧠 What I Learned
+##  What I Learned
 
 - How to connect Node.js to a PostgreSQL database using `pg`
 - Handling HTML forms with Express and body-parser
@@ -107,17 +107,17 @@ Fill out the form → submit → you’ll be redirected to `/submit` where you�
 
 ---
 
-## 📄 License
+## License
 
 This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
-## 🙋‍♀️ Author
+##  Author
 
-👩 **Binita**  
+ **Binita**  
 🔗 [GitHub Profile](https://github.com/binita54)
 
 ---
 
-⭐ If you found this project helpful or interesting, drop a ⭐ to support!
+ If you found this project helpful or interesting, drop a ⭐ to support!
