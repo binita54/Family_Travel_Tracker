@@ -11,7 +11,7 @@ The **Family Travel Tracker** is a backend web app built using **Node.js**, **Ex
 ![F](screenshots/SS6.png)
 ![G](screenshots/SS7.png)
 
-## 🚀 Features
+##  Features
 
 - Accepts user input via an HTML form (Name + Destination)
 - Saves the data into a PostgreSQL database
@@ -22,7 +22,7 @@ The **Family Travel Tracker** is a backend web app built using **Node.js**, **Ex
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Node.js**
 - **Express.js**
@@ -32,7 +32,7 @@ The **Family Travel Tracker** is a backend web app built using **Node.js**, **Ex
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Family_Travel_Tracker/
@@ -44,7 +44,7 @@ Family_Travel_Tracker/
 
 ---
 
-## ⚙️ How to Run Locally
+##  How to Run Locally
 
 ### 1. Clone this repository
 
